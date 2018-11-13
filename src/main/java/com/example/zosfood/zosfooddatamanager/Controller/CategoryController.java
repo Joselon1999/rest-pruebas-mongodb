@@ -22,10 +22,11 @@ public class CategoryController {
 
     @GetMapping("/fill")
     public String setValues(){
-        categoryService.save(new Category(1,"Una polla"));
-        categoryService.save(new Category(2,"Dos pollas"));
-        categoryService.save(new Category(2,"Tres pollas"));
-        categoryService.save(new Category(2,"Muchas pollas"));
+        categoryService.save(new Category(1,"Jojo's Part 1","Phantom Blood"));
+        categoryService.save(new Category(2,"Jojo's Part 2","Battle Tendency"));
+        categoryService.save(new Category(2,"Jojo's Part 3","Stardust Crusaders"));
+        categoryService.save(new Category(2,"Jojo's Part 4","Diamond is Unbreakable"));
+        categoryService.save(new Category(2,"Jojo's Part 5","Vento Aureo"));
         return "Listo Papuh";
     }
 

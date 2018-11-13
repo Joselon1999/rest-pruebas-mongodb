@@ -22,10 +22,12 @@ public class CategoryService {
         return categoryRepository.save(category);
     }
 
+    //MongoRepository usa CrudRepository por lo que el Delete pide un valor STRING
     public void delete(String id){
         categoryRepository.deleteById(id);
     }
 
+    //MongoRepository usa CrudRepository por lo que el FindBy pide un valor STRING
     public Optional<Category> findCategoryById(String id){
         return categoryRepository.findById(id);
     }
