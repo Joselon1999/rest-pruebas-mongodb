@@ -1,10 +1,12 @@
 package com.example.zosfood.zosfooddatamanager.Controller;
 
 import com.example.zosfood.zosfooddatamanager.Entity.Category;
+import com.example.zosfood.zosfooddatamanager.Entity.Usuario;
 import com.example.zosfood.zosfooddatamanager.Service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -22,11 +24,11 @@ public class CategoryController {
 
     @GetMapping("/fill")
     public String setValues(){
-        categoryService.save(new Category(1,"Jojo's Part 1","Phantom Blood"));
-        categoryService.save(new Category(2,"Jojo's Part 2","Battle Tendency"));
-        categoryService.save(new Category(2,"Jojo's Part 3","Stardust Crusaders"));
-        categoryService.save(new Category(2,"Jojo's Part 4","Diamond is Unbreakable"));
-        categoryService.save(new Category(2,"Jojo's Part 5","Vento Aureo"));
+        categoryService.save(new Category(1,"Jojo's Part 1","Phantom Blood",));
+        categoryService.save(new Category(2,"Jojo's Part 2","Battle Tendency",));
+        categoryService.save(new Category(3,"Jojo's Part 3","Stardust Crusaders",));
+        categoryService.save(new Category(4,"Jojo's Part 4","Diamond is Unbreakable",));
+        categoryService.save(new Category(5,"Jojo's Part 5","Vento Aureo",));
         return "Listo Papuh";
     }
 

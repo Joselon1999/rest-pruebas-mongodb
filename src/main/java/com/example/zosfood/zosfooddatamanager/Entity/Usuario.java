@@ -3,7 +3,7 @@ package com.example.zosfood.zosfooddatamanager.Entity;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
+@Document(collection = "usuario")
 public class Usuario {
 
     @Id
