@@ -1,6 +1,7 @@
 package com.example.zosfood.zosfooddatamanager.Service;
 
 import com.example.zosfood.zosfooddatamanager.Entity.Category;
+import com.example.zosfood.zosfooddatamanager.Entity.Usuario;
 import com.example.zosfood.zosfooddatamanager.Repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,5 +32,6 @@ public class CategoryService {
     public Optional<Category> findCategoryById(String id){
         return categoryRepository.findById(id);
     }
+
 }
 

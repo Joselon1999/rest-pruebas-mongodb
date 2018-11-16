@@ -10,7 +10,6 @@ public class Stand {
     int id;
     String nombre;
     String habilidad;
-    Usuario usuario;
 
     public int getId() {
         return id;
@@ -36,19 +35,10 @@ public class Stand {
         this.habilidad = habilidad;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
-
-    public Stand(int id, String nombre, String habilidad, Usuario usuario) {
+    public Stand(int id, String nombre, String habilidad) {
         this.id = id;
         this.nombre = nombre;
         this.habilidad = habilidad;
-        this.usuario = usuario;
     }
 
     public Stand() {

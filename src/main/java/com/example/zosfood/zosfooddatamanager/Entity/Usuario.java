@@ -10,7 +10,7 @@ public class Usuario {
     int id;
     String nombres;
     Stand stand;
-    Category category;
+
 
     public int getId() {
         return id;
@@ -36,19 +36,12 @@ public class Usuario {
         this.stand = stand;
     }
 
-    public Category getCategory() {
-        return category;
-    }
 
-    public void setCategory(Category category) {
-        this.category = category;
-    }
 
-    public Usuario(int id, String nombres, Stand stand, Category category) {
+    public Usuario(int id, String nombres, Stand stand) {
         this.id = id;
         this.nombres = nombres;
         this.stand = stand;
-        this.category = category;
     }
 
     public Usuario() {
