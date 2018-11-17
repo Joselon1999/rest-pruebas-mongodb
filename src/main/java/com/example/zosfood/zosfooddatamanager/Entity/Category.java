@@ -12,7 +12,6 @@ public class Category {
     private int id;
     private String nombre;
     private String descripcion;
-    private List<Usuario> usuarios;
 
     public int getId() {
         return id;
@@ -38,19 +37,11 @@ public class Category {
         this.descripcion = descripcion;
     }
 
-    public List<Usuario> getUsuarios() {
-        return usuarios;
-    }
 
-    public void setUsuarios(List<Usuario> usuarios) {
-        this.usuarios = usuarios;
-    }
-
-    public Category(int id, String nombre, String descripcion, List<Usuario> usuarios) {
+    public Category(int id, String nombre, String descripcion) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.usuarios = usuarios;
     }
 
     public Category() {
