@@ -16,14 +16,14 @@ section{
 }
 /*Describe Sections*/
 #home{
-    background: url("../img/webp/Table.webp") no-repeat center center fixed;
+    background: url("../img/webp/jojo_s_wp.webp") no-repeat center center fixed;
     display: table;
     background-size: cover;
     position: relative;
 }
 
 #rest{
-    background: url("../img/webp/background.webp") no-repeat center center fixed;
+    background: url("../img/webp/jojo_s_wp2.webp") no-repeat center center fixed;
     display: table;
     background-size: cover;
     position: relative;
