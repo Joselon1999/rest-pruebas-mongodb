@@ -96,6 +96,59 @@ p {color:#FFFFFF;}
     <!--End of Marketing Container-->
 </section>
 <!--End of Principal Content-->
+<section id="stand">
+    <button onclick="
+  ranking.set_rank(['A', 'A', 'C', 'E', 'A', 'C']);
+  ranking.set_color(
+    'rgba(255, 0, 0, 0.6)', // ranking thing in the middle
+    'rgba(0, 0, 0, 1)', // letters
+    'rgba(0, 0, 0, 0.5)');// shadows
+  background.set_color(
+    'rgba(0, 0, 0, 1)', // text
+    'rgba(0, 0, 0, 1)', // circle
+    'rgba(0, 0, 0, 0.5)'); // shadows
+  ">Joselon</button><br />
+
+    <button onclick="
+  ranking.set_rank(['D', 'C', 'D', 'A', 'D', 'E']);
+  ranking.set_color(
+    'rgba(255, 35, 189, 1)',
+    'rgba(255, 255, 255, 1)',
+    'rgba(0, 0, 0, 0.7)');
+  background.set_color(
+    'rgba(255, 255, 255, 1)',
+    'rgba(255, 255, 255, 1)',
+    'rgba(0, 0, 0, 0.5)');
+  ">Lord Banner</button><br />
+
+    <button onclick="
+  ranking.set_rank(['A', 'A', 'C', 'A', 'B', 'B']);
+  ranking.set_color(
+    'rgba(255, 236, 35, 1)',
+    'rgba(0, 0, 0, 1)',
+    'rgba(0, 0, 0, 0.7)');
+  background.set_color(
+    'rgba(0, 0, 0, 1)',
+    'rgba(0, 0, 0, 1)',
+    'rgba(0, 0, 0, 0.5)');
+  ">Ytalo</button><br />
+
+    <button onclick="
+  ranking.set_rank(['A', 'B', 'B', 'E', 'C', 'D']);
+  ranking.set_color(
+    'rgba(123, 35, 255, 1)',
+    'rgba(0, 0, 0, 1)',
+    'rgba(0, 0, 0, 0.7)');
+  background.set_color(
+    'rgba(0, 0, 0, 1)',
+    'rgba(0, 0, 0, 1)',
+    'rgba(0, 0, 0, 0.5)');
+  ">Hector</button><br />
+    <div style="text-align:center">
+    <canvas id="dr_top" style="position: absolute; z-index: -1;"></canvas>
+    <canvas id="dr_bot" style="position: absolute; z-index: -2;"></canvas>
+    </div>
+</section>
 <!--Begin of Footer Content-->
 <footer class="container-fluid">
     <div class="row">
@@ -119,6 +172,9 @@ p {color:#FFFFFF;}
 </footer>
 <!--End of Footer Content-->
 
+<!--JoJo's JS & Canvas-->
+
+<script src="/js/jojo-stands.js"></script>
 <!--JS & Popper-->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
