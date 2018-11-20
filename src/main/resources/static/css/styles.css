@@ -29,6 +29,13 @@ section{
     position: relative;
 }
 
+#consume{
+    background: url("../img/webp/jojo_s_wp.webp") no-repeat center center fixed;
+    display: table;
+    background-size: cover;
+    position: relative;
+}
+
 /*Cover Text Position*/
 .landing-text{
     display: table-cell;

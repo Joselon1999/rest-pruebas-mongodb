@@ -1,10 +1,10 @@
 package com.example.zosfood.zosfooddatamanager.Controller;
 
-import com.example.zosfood.zosfooddatamanager.Entity.Category;
-import com.example.zosfood.zosfooddatamanager.Entity.Stand;
-import com.example.zosfood.zosfooddatamanager.Entity.Usuario;
+import com.example.zosfood.zosfooddatamanager.Entity.*;
 import com.example.zosfood.zosfooddatamanager.Service.CategoryService;
+import com.example.zosfood.zosfooddatamanager.Service.PikachuService;
 import com.example.zosfood.zosfooddatamanager.Service.UsuarioService;
+import com.example.zosfood.zosfooddatamanager.Service.WaifuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,9 +17,14 @@ import java.util.Optional;
 public class CategoryController {
 
     @Autowired
-    private CategoryService categoryService;
+    CategoryService categoryService;
     @Autowired
-    private UsuarioService usuarioService;
+    UsuarioService usuarioService;
+    @Autowired
+    WaifuService waifuService;
+    @Autowired
+    PikachuService pikachuService;
+
 
     @GetMapping("/fill")
     public String setValues(){
@@ -28,11 +33,24 @@ public class CategoryController {
         categoryService.save(new Category(3,"Jojo's Part 3","Stardust Crusaders"));
         categoryService.save(new Category(4,"Jojo's Part 4","Diamond is Unbreakable"));
         categoryService.save(new Category(5,"Jojo's Part 5","Vento Aureo"));
+
         usuarioService.save(new Usuario(1,"Jhonatan Joestar",new Stand(1,"Goodest Boi","Being Best JOJO")));
         usuarioService.save(new Usuario(2,"Jhoseph Joestar",new Stand(1,"Hermit Purple","Crash planes and NIGERUNDAYO")));
         usuarioService.save(new Usuario(3,"Jotaro Kuyo",new Stand(1,"Star Platinum","Fucks dolphins and can stop time sometimes")));
         usuarioService.save(new Usuario(4,"Josuke Higashikata",new Stand(1,"Crazy Diamond","As useless as Joseph but GRATO DAZE")));
         usuarioService.save(new Usuario(5,"Giorno Giovanna",new Stand(1,"Gold Experience","Brings shit to life and drinks piss")));
+
+        waifuService.save(new Waifu(1,"Emilia"));
+        waifuService.save(new Waifu(2,"Rem"));
+        waifuService.save(new Waifu(3,"Asuna Yuuki"));
+        waifuService.save(new Waifu(4,"Chise Hatori"));
+        waifuService.save(new Waifu(5,"Megumin"));
+
+        pikachuService.save(new Pikachu(1,"Pikachu Deadpool"));
+        pikachuService.save(new Pikachu(2,"Pikachu Levi"));
+        pikachuService.save(new Pikachu(3,"Pikachu Kakashi"));
+        pikachuService.save(new Pikachu(4,"Pikachu Capitan America"));
+        pikachuService.save(new Pikachu(5,"Pikachu Iron Man"));
         return "Listo Papuh";
     }
 
