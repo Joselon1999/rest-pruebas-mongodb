@@ -1,4 +1,4 @@
-package com.example.zosfood.zosfooddatamanager.Entity;
+package com.example.zosfood.zosfooddatamanager.Document;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

@@ -634,14 +634,50 @@ var ranking = {
       window.cancelAnimationFrame(requestAnimationFrame);
     }
   },
+
+    set_rank_random: function () {
+        "use strict";
+        var i = 0,
+            converted = [0, 0, 0, 0, 0, 0];
+        var new_stats =  [0, 0, 0, 0, 0, 0];
+
+        console.log(new_stats)
+        for(var a = 0; a<6;a++){
+          new_stats[a]= Math.floor(Math.random()*5);
+            console.log(new_stats+ " - Rdm " + a)
+        }
+        console.log(new_stats)
+        // praise the lerp
+        for (i = 0; i < new_stats.length; i += 1) {
+            converted[i] = new_stats[i];
+            console.log(converted+ " - Convert " + i)
+        }
+
+        // something here makes it go faster the second time it runs, onwards
+        // store current position as initial
+        this.stats_init = this.stats_temp;
+        // replace final stats with new destination
+        this.stats_final = converted;
+        this.dt_limit = 0.38; // hack fix for how it speeds up after the first rank
+
+        // restart the lerp or begin animation loop again
+        if (this.dt < this.dt_limit) {
+            this.dt = 0;
+        } else {
+            this.dt = 0;
+            this.update();
+        }
+    },
+
   set_rank: function (new_stats) {
     "use strict";
     var i = 0,
       converted = [0, 0, 0, 0, 0, 0];
-
-    // praise the lerp
+      console.log(converted);
+      // praise the lerp
     for (i = 0; i < new_stats.length; i += 1) {
       converted[i] = convert2Number(new_stats[i]);
+        console.log(converted+ " - " + i);
     }
 
     // something here makes it go faster the second time it runs, onwards

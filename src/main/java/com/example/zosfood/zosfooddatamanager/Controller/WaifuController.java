@@ -1,6 +1,6 @@
 package com.example.zosfood.zosfooddatamanager.Controller;
 
-import com.example.zosfood.zosfooddatamanager.Entity.Waifu;
+import com.example.zosfood.zosfooddatamanager.Document.Waifu;
 import com.example.zosfood.zosfooddatamanager.Service.WaifuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,6 @@
 package com.example.zosfood.zosfooddatamanager.Service;
 
-import com.example.zosfood.zosfooddatamanager.Entity.Pikachu;
+import com.example.zosfood.zosfooddatamanager.Document.Pikachu;
 import com.example.zosfood.zosfooddatamanager.Repository.PikachuRepositoty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.example.zosfood.zosfooddatamanager.Controller;
 
-import com.example.zosfood.zosfooddatamanager.Entity.*;
+import com.example.zosfood.zosfooddatamanager.Document.*;
 import com.example.zosfood.zosfooddatamanager.Service.CategoryService;
 import com.example.zosfood.zosfooddatamanager.Service.PikachuService;
 import com.example.zosfood.zosfooddatamanager.Service.UsuarioService;
@@ -8,8 +8,6 @@ import com.example.zosfood.zosfooddatamanager.Service.WaifuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 

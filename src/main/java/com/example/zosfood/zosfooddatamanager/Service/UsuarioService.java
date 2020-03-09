@@ -1,6 +1,6 @@
 package com.example.zosfood.zosfooddatamanager.Service;
 
-import com.example.zosfood.zosfooddatamanager.Entity.Usuario;
+import com.example.zosfood.zosfooddatamanager.Document.Usuario;
 import com.example.zosfood.zosfooddatamanager.Repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

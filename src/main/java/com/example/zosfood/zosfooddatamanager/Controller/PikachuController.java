@@ -1,6 +1,6 @@
 package com.example.zosfood.zosfooddatamanager.Controller;
 
-import com.example.zosfood.zosfooddatamanager.Entity.Pikachu;
+import com.example.zosfood.zosfooddatamanager.Document.Pikachu;
 import com.example.zosfood.zosfooddatamanager.Service.PikachuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

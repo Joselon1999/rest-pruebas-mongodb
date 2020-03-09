@@ -99,8 +99,9 @@ p {color:#FFFFFF;}
 </section>
 <!--End of Principal Content-->
 <section id="stand">
-    <button onclick="
-  ranking.set_rank(['A', 'A', 'C', 'E', 'A', 'C']);
+
+    <button class="btn-dark btn-block" onclick="
+  ranking.set_rank_random();
   ranking.set_color(
     'rgba(110, 227, 44, 0.9)', // ranking thing in the middle
     'rgba(0, 0, 0, 1)', // letters
@@ -109,8 +110,19 @@ p {color:#FFFFFF;}
     'rgba(0, 0, 0, 1)', // text
     'rgba(0, 0, 0, 1)', // circle
     'rgba(0, 0, 0, 0.5)'); // shadows
-  ">Joselon</button><br />
-
+  ">Random</button><br />
+    <!--
+<button onclick="
+ranking.set_rank(['A', 'A', 'C', 'E', 'A', 'C']);
+ranking.set_color(
+'rgba(110, 227, 44, 0.9)', // ranking thing in the middle
+'rgba(0, 0, 0, 1)', // letters
+'rgba(0, 0, 0, 0.5)');// shadows
+background.set_color(
+'rgba(0, 0, 0, 1)', // text
+'rgba(0, 0, 0, 1)', // circle
+'rgba(0, 0, 0, 0.5)'); // shadows
+">Joselon</button><br />
     <button onclick="
   ranking.set_rank(['D', 'C', 'D', 'A', 'D', 'E']);
   ranking.set_color(
@@ -146,7 +158,7 @@ p {color:#FFFFFF;}
     'rgba(0, 0, 0, 1)',
     'rgba(0, 0, 0, 0.5)');
   ">Hector</button><br />
-
+-->
         <div style="text-align:center">
 
     <canvas id="dr_top" style="position: absolute; z-index: -1;"></canvas>
